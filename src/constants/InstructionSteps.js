@@ -1,4 +1,4 @@
-// TODO: Add clear Steps
+import sound1 from "../assets/chimes-7035.mp3";
 
 const INSTRUCTION_STEPS_TEST1 = [
   {
@@ -12,13 +12,10 @@ const INSTRUCTION_STEPS_TEST1 = [
   },
   {
     stepIndex: 2,
-    content: `
-          <h2>Precautions</h2>
+    content: `<h2>Precautions</h2>
           <p>
           1.The student/ subject has to sit 1 ft away from the screen.
-
           విద్యార్థి/ సబ్జెక్ట్ స్క్రీన్ నుండి 1-2 అడుగుల దూరంలో కూర్చోవాలి 
-          
           </p>
           <p>2.The subject/ student has to sit in an isolated room so that he/she will not get distracted.
 
@@ -30,14 +27,14 @@ const INSTRUCTION_STEPS_TEST1 = [
           </p>`,
     buttonLabel1: "Previous",
     buttonLabel2: "Next",
+    voiceInstruction: sound1,
   },
   {
     stepIndex: 3,
-    content: `
-    <h2>Instructions</h2>
+    content: `<h2>Instructions</h2>
     <p>A set of words will be presented to you on the screen, one after the other. Each word will be 
     displayed for a brief period of time. Pay attention to them carefully as you will have to recall 
-    them later. </p>
+    them later.</p>
     <p>{Translate In telugu}</p>`,
     buttonLabel1: "Previous",
     buttonLabel2: "Next",
@@ -49,11 +46,10 @@ const INSTRUCTION_STEPS_TEST1 = [
 const INSTRUCTION_STEPS_TEST2 = [
   {
     stepIndex: 1,
-    content: `
-    <h2>Instructions</h2>
+    content: `<h2>Instructions</h2>
     <p>Same set of words will be presented on the screen. 
     Please pay attention to them carefully as you will have to recall them later</p><p>Only colors no text</p>
-    <p>{Translate In telugu}</p>,
+    <p>{Translate In telugu}</p>
     <p> Click next below to move start the trial</p>`,
     buttonLabel2: "Next",
   },
@@ -63,7 +59,7 @@ const INSTRUCTION_STEPS_TEST3 = [
   {
     stepIndex: 1,
     content: `
-    <h2>Instructions</h2>,
+    <h2>Instructions</h2>
     <p>Same set of words will be presented on the screen. Please pay attention to them carefully 
     as you will have to recall them later. </p>
     <p>{Translate In telugu}</p`,
@@ -77,8 +73,4 @@ const INSTRUCTION_STEPS_TEST3 = [
   },
 ];
 
-export {
-  INSTRUCTION_STEPS_TEST1,
-  INSTRUCTION_STEPS_TEST2,
-  INSTRUCTION_STEPS_TEST3,
-};
+export { INSTRUCTION_STEPS_TEST1, INSTRUCTION_STEPS_TEST2, INSTRUCTION_STEPS_TEST3 };
