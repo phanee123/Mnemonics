@@ -65,12 +65,16 @@ const INSTRUCTION_STEPS_TEST3 = [
     <p>{Translate In telugu}</p`,
     buttonLabel2: "Next",
   },
-  {
-    stepIndex: 2,
-    content: `<p>Experiment will start after you end instructions.</p>`,
-    buttonLabel1: "Previous",
-    buttonLabel2: "End Instructions",
-  },
+  // {
+  //   stepIndex: 2,
+  //   content: `<p>Experiment will start after you end instructions.</p>`,
+  //   buttonLabel1: "Previous",
+  //   buttonLabel2: "End Instructions",
+  // },
 ];
 
-export { INSTRUCTION_STEPS_TEST1, INSTRUCTION_STEPS_TEST2, INSTRUCTION_STEPS_TEST3 };
+export {
+  INSTRUCTION_STEPS_TEST1,
+  INSTRUCTION_STEPS_TEST2,
+  INSTRUCTION_STEPS_TEST3,
+};

@@ -20,6 +20,19 @@ const styles = {
     flexDirection: "column",
     gap: "32px",
   },
+
+  button: {
+    display: "block",
+    outline: "0",
+    border: "0",
+    padding: "8px 32px",
+    backgroundColor: "#6666ff",
+    color: "white",
+    borderRadius: "6px",
+    cursor: "pointer",
+    fontSize: "20px",
+    fontWeight: "600",
+  },
 };
 
 const ExitWithDownloadExcel = () => {
@@ -28,9 +41,15 @@ const ExitWithDownloadExcel = () => {
 
   const constructData = () => {
     if (systemInput.length >= userInput.length) {
-      return systemInput.map((eachRow, index) => ({ ...eachRow, userValue: userInput[index] ? userInput[index] : "" }));
+      return systemInput.map((eachRow, index) => ({
+        ...eachRow,
+        userValue: userInput[index] ? userInput[index] : "",
+      }));
     } else {
-      return userInput.map((userWord, index) => ({ userValue: userWord, ...systemInput[index] }));
+      return userInput.map((userWord, index) => ({
+        userValue: userWord,
+        ...systemInput[index],
+      }));
     }
   };
   const csvReport = {
@@ -46,12 +65,16 @@ const ExitWithDownloadExcel = () => {
     <div style={styles.wrapper}>
       <h3>Results</h3>
       <p>
-        A set of 20 words were presented to you in 3 trails. 10 are non-mnemonic and 10 are mnemonic words. Compare your
-        results with the list of non-mnemonic and mnemonic words. Calculate the total no. of non-mnemonic and mnemonic
-        words and enter the results in the following format in your record book.
+        A set of 20 words were presented to you in 3 trails. 10 are non-mnemonic
+        and 10 are mnemonic words. Compare your results with the list of
+        non-mnemonic and mnemonic words. Calculate the total no. of non-mnemonic
+        and mnemonic words and enter the results in the following format in your
+        record book.
       </p>
       <CSVLink {...csvReport}>Download me</CSVLink>
-      <button onClick={() => navigate("/lastactivity")}>End</button>
+      <button style={styles.button} onClick={() => navigate("/lastactivity")}>
+        End
+      </button>
     </div>
   );
 };

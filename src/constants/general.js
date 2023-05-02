@@ -149,4 +149,9 @@ function getRandomInt(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
 }
-export { imageImports, getRandomInt, NUMBER_OF_SECONDS, NUM_QUESTIONS_INTERVENTION };
+export {
+  imageImports,
+  getRandomInt,
+  NUMBER_OF_SECONDS,
+  NUM_QUESTIONS_INTERVENTION,
+};

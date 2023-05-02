@@ -15,11 +15,16 @@ const ImageFlash = () => {
           if (step !== 4) navigate("/");
           else navigate("/intervention");
         } else setCurrentImage(i);
-      }, i * 1000);
+      }, i * 2000);
     }
   }, []);
 
-  return <img src={imageImports[currentImage].imageUrl} alt={imageImports[currentImage].name} />;
+  return (
+    <img
+      src={imageImports[currentImage].imageUrl}
+      alt={imageImports[currentImage].name}
+    />
+  );
 };
 
 export default ImageFlash;
