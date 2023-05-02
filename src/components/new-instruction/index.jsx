@@ -3,7 +3,15 @@ import styles from "./styles.module.css";
 import Parser from "html-react-parser";
 
 const Instruction = (props) => {
-  const { children, label1, label2, voiceInstruction, handleBackClick, handleNextClick, handleAudio } = props;
+  const {
+    children,
+    label1,
+    label2,
+    voiceInstruction,
+    handleBackClick,
+    handleNextClick,
+    handleAudio,
+  } = props;
 
   return (
     <div className={styles.card}>
@@ -11,7 +19,7 @@ const Instruction = (props) => {
       <div className={styles.buttonContainer}>
         {voiceInstruction && (
           <button onClick={handleAudio} className={styles.buttonBack}>
-            PLAY
+            Play|Pause
           </button>
         )}
         {label1 && (

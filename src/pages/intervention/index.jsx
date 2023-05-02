@@ -1,9 +1,15 @@
 import { useEffect, useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { NUMBER_OF_SECONDS, getRandomInt, NUM_QUESTIONS_INTERVENTION } from "../../constants/general";
+import {
+  NUMBER_OF_SECONDS,
+  getRandomInt,
+  NUM_QUESTIONS_INTERVENTION,
+} from "../../constants/general";
 import styles from "./styles.module.css";
 
-const randomNumbers = Array.from(Array(NUM_QUESTIONS_INTERVENTION * 2).keys()).map((_, i) => getRandomInt(10, 99));
+const randomNumbers = Array.from(
+  Array(NUM_QUESTIONS_INTERVENTION * 2).keys()
+).map((_, i) => getRandomInt(10, 99));
 let results = [];
 
 for (let i = 0; i < randomNumbers.length; i = i + 2) {
@@ -16,7 +22,7 @@ const Intervention = () => {
   useEffect(() => {
     setTimeout(() => {
       navigate("/inputs");
-    }, NUMBER_OF_SECONDS * 1000);
+    }, NUMBER_OF_SECONDS * 1500);
   }, []);
   return (
     <div className={styles.container}>
@@ -28,7 +34,9 @@ const Intervention = () => {
             <input
               value={currentSum._index}
               type="number"
-              onChange={(e) => setCurrentSum((prev) => ({ ...prev, [_index]: e.target.value }))}
+              onChange={(e) =>
+                setCurrentSum((prev) => ({ ...prev, [_index]: e.target.value }))
+              }
               className={styles.inputStyles}
             />
           </h2>

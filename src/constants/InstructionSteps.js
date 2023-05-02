@@ -1,4 +1,5 @@
-import sound1 from "../assets/chimes-7035.mp3";
+import sound1 from "../assets/instructionaudio1.mp3";
+import sound2 from "../assets/instructionaudio2.mp3";
 
 const INSTRUCTION_STEPS_TEST1 = [
   {
@@ -27,7 +28,6 @@ const INSTRUCTION_STEPS_TEST1 = [
           </p>`,
     buttonLabel1: "Previous",
     buttonLabel2: "Next",
-    voiceInstruction: sound1,
   },
   {
     stepIndex: 3,
@@ -38,6 +38,7 @@ const INSTRUCTION_STEPS_TEST1 = [
     <p>{Translate In telugu}</p>`,
     buttonLabel1: "Previous",
     buttonLabel2: "Next",
+    voiceInstruction: sound1,
   },
 ];
 
@@ -51,6 +52,7 @@ const INSTRUCTION_STEPS_TEST2 = [
     Please pay attention to them carefully as you will have to recall them later</p><p>Only colors no text</p>
     <p>{Translate In telugu}</p>
     <p> Click next below to move start the trial</p>`,
+    voiceInstruction: sound2,
     buttonLabel2: "Next",
   },
 ];
@@ -64,6 +66,7 @@ const INSTRUCTION_STEPS_TEST3 = [
     as you will have to recall them later. </p>
     <p>{Translate In telugu}</p`,
     buttonLabel2: "Next",
+    voiceInstruction: sound1,
   },
   // {
   //   stepIndex: 2,

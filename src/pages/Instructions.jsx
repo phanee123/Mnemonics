@@ -13,7 +13,12 @@ const Instructions = () => {
   const navigate = useNavigate();
   const { step } = useContext(ResultsContext);
 
-  const CURRENT_INSTRUCTIONS = ["", INSTRUCTION_STEPS_TEST1, INSTRUCTION_STEPS_TEST2, INSTRUCTION_STEPS_TEST3][step];
+  const CURRENT_INSTRUCTIONS = [
+    "",
+    INSTRUCTION_STEPS_TEST1,
+    INSTRUCTION_STEPS_TEST2,
+    INSTRUCTION_STEPS_TEST3,
+  ][step];
   const {
     stepIndex,
     buttonLabel1 = "",
@@ -24,12 +29,23 @@ const Instructions = () => {
 
   const audio = new Audio(voiceInstruction);
   const handleNextClick =
-    stepIndex === CURRENT_INSTRUCTIONS.length ? () => navigate(`/ready`) : () => setCurrentStep((prev) => prev + 1);
+    stepIndex === CURRENT_INSTRUCTIONS.length
+      ? () => navigate(`/ready`)
+      : () => setCurrentStep((prev) => prev + 1);
   const handleBackClick = () => setCurrentStep((prev) => prev - 1);
+
+  // const audioPlayPause = () => {
+  //   if (voiceInstruction) {
+  //     audio.play();
+  //   }
 
   const audioPlayPause = () => {
     if (voiceInstruction) {
-      audio.play();
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
     }
   };
   return (
