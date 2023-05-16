@@ -42,8 +42,17 @@ const UserInput = () => {
   };
   return (
     <div style={styles.container}>
-      <h3></h3>
-      <label htmlFor="userInput">Please enter comma separated values</label>
+      <h4>
+        Please type the words you have seen earlier in the box given below. Try
+        to recall and type as many words as possible.
+      </h4>
+
+      <label htmlFor="userInput">
+        <h4>
+          *It is important that every word that you enter is separated by a coma{" "}
+          <b>(,)</b>
+        </h4>{" "}
+      </label>
 
       <textarea
         style={styles.inputBox}

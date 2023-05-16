@@ -5,17 +5,21 @@ const lastPageStyles = {
     padding: "2rem",
     display: "flex",
     flexDirection: "column",
-    minHeight: "50vh",
-    gap: "24px",
+    minHeight: "60vh",
+    gap: "15px",
   },
   bottomArea: {
     display: "flex",
     flexDirection: "column",
-    gap: "52px",
+    gap: "15px",
   },
 
   footer: {
     textAlign: "center",
+  },
+  dotted: {
+    textDecorationLine: "underline",
+    textDecorationStyle: "dotted",
   },
 };
 
@@ -23,16 +27,17 @@ const LastPage = () => {
   return (
     <div style={lastPageStyles.container}>
       <h4>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, quas!
+        Table-1: Showing subject responses/results for Mnemonic and Non-Mnemonic
+        words presented in the experiment
       </h4>
       <table>
         <thead>
           <tr>
-            <th colSpan={3}>No. of correct responses</th>
+            <th colSpan={3}>Number of correct words correctly recalled</th>
           </tr>
           <tr>
-            <th>Recall </th>
-            <th>Recognition</th>
+            <th>Mnemonic Words</th>
+            <th>Non-Mnemonic Words</th>
           </tr>
         </thead>
         <tbody>
@@ -48,10 +53,21 @@ const LastPage = () => {
       </table>
       <div style={lastPageStyles.bottomArea}>
         <h4>Discussion:</h4>
+        <p style={lastPageStyles.dotted}>
+          Discuss the phenomena of Mnemonic/Non-Mnemonic words having a bearing
+          on memory.
+        </p>
         <h4>Conclusion:</h4>
+        <p style={lastPageStyles.dotted}>Add conclusion later.</p>
         <h4>Practical Application:</h4>
+        <p style={lastPageStyles.dotted}>
+          Mention two situations where you use Mnemonics technique in your day
+          to day life.
+        </p>
         <footer>
-          <h5 style={lastPageStyles.footer}>.....*End Experiment*.....</h5>
+          <h5 style={lastPageStyles.footer}>
+            .....*End of the Experiment*.....
+          </h5>
         </footer>
       </div>
     </div>

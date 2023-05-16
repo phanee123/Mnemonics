@@ -22,15 +22,16 @@ const Intervention = () => {
   useEffect(() => {
     setTimeout(() => {
       navigate("/inputs");
-    }, NUMBER_OF_SECONDS * 1500);
+    }, NUMBER_OF_SECONDS * 2000);
   }, []);
   return (
     <div className={styles.container}>
       <h2>Find the sum of below numbers</h2>
+      <h2>Please calculate the results as quickly as possible</h2>
       <div className={styles.questions}>
         {results.map((eachPair, _index) => (
           <h2 className={styles.sum} key={_index}>
-            {`${eachPair[0]} - ${eachPair[1]}`} =
+            {`${eachPair[0]} + ${eachPair[1]}`} =
             <input
               value={currentSum._index}
               type="number"

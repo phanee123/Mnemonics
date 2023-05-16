@@ -34,11 +34,6 @@ const Instructions = () => {
       : () => setCurrentStep((prev) => prev + 1);
   const handleBackClick = () => setCurrentStep((prev) => prev - 1);
 
-  // const audioPlayPause = () => {
-  //   if (voiceInstruction) {
-  //     audio.play();
-  //   }
-
   const audioPlayPause = () => {
     if (voiceInstruction) {
       if (audio.paused) {
@@ -48,6 +43,7 @@ const Instructions = () => {
       }
     }
   };
+
   return (
     <Instruction
       handleNextClick={() => {
@@ -67,5 +63,17 @@ const Instructions = () => {
     </Instruction>
   );
 };
+
+//below are the lines before adding voice instructions audio handling function to this .
+// return (
+//   <Instruction
+//     handleNextClick={handleNextClick}
+//     label1={buttonLabel1}
+//     label2={buttonLabel2}
+//     handleBackClick={handleBackClick}
+//   >
+//     {content}
+//   </Instruction>
+// );
 
 export default Instructions;

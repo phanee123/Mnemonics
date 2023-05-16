@@ -13,19 +13,17 @@ const INSTRUCTION_STEPS_TEST1 = [
   },
   {
     stepIndex: 2,
-    content: `<h2>Precautions</h2>
+    content: `<h2>Conditions to be followed while conducting the experiment / Precautions!</h2>
           <p>
-          1.The student/ subject has to sit 1 ft away from the screen.
-          విద్యార్థి/ సబ్జెక్ట్ స్క్రీన్ నుండి 1-2 అడుగుల దూరంలో కూర్చోవాలి 
+          The student or the subject will have to sit 1 ft away from the screen. 
           </p>
-          <p>2.The subject/ student has to sit in an isolated room so that he/she will not get distracted.
-
-          సబ్జెక్ట్/విద్యార్థి వివిక్త గదిలో కూర్చోవాలి, తద్వారా అతను/ఆమె దృష్టి మరల్చకూడదు.
+          <p>The subject will have to sit comfortably in a quiet and well-ventilated room.
           </p>
-          <p>3.If the subject is using phone/ tab then its mandatory to put the phone on DND mode.
-
-          విద్యార్థి ఫోన్‌లు/ట్యాబ్‌లను ఉపయోగిస్తుంటే, ఫోన్‌ను DND మోడ్‌లో ఉంచడం తప్పనిసరి.
-          </p>`,
+          <p>If the subject is using phone/ tab to conduct the experiment then it is mandatory for him/her 
+              to put the phone on Do Not Disturb (DND) mode in order to avoid any disruptions.
+          </p>
+          <p>Please keep a notebook and a pen while you are conducting the experiment because you may have to note down some information.</p>
+          `,
     buttonLabel1: "Previous",
     buttonLabel2: "Next",
   },
@@ -35,7 +33,7 @@ const INSTRUCTION_STEPS_TEST1 = [
     <p>A set of words will be presented to you on the screen, one after the other. Each word will be 
     displayed for a brief period of time. Pay attention to them carefully as you will have to recall 
     them later.</p>
-    <p>{Translate In telugu}</p>`,
+    `,
     buttonLabel1: "Previous",
     buttonLabel2: "Next",
     voiceInstruction: sound1,
@@ -49,9 +47,9 @@ const INSTRUCTION_STEPS_TEST2 = [
     stepIndex: 1,
     content: `<h2>Instructions</h2>
     <p>Same set of words will be presented on the screen. 
-    Please pay attention to them carefully as you will have to recall them later</p><p>Only colors no text</p>
-    <p>{Translate In telugu}</p>
-    <p> Click next below to move start the trial</p>`,
+    Please pay attention to them carefully as you will have to recall them later</p>
+    
+    `,
     voiceInstruction: sound2,
     buttonLabel2: "Next",
   },
@@ -64,9 +62,9 @@ const INSTRUCTION_STEPS_TEST3 = [
     <h2>Instructions</h2>
     <p>Same set of words will be presented on the screen. Please pay attention to them carefully 
     as you will have to recall them later. </p>
-    <p>{Translate In telugu}</p`,
+    `,
     buttonLabel2: "Next",
-    voiceInstruction: sound1,
+    voiceInstruction: sound2,
   },
   // {
   //   stepIndex: 2,

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 import Parser from "html-react-parser";
 
@@ -13,13 +13,20 @@ const Instruction = (props) => {
     handleAudio,
   } = props;
 
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handleClick = () => {
+    handleAudio();
+    setIsPlaying(!isPlaying);
+  };
+
   return (
     <div className={styles.card}>
       {Parser(children)}
       <div className={styles.buttonContainer}>
         {voiceInstruction && (
-          <button onClick={handleAudio} className={styles.buttonBack}>
-            Play|Pause
+          <button onClick={handleClick} className={styles.buttonAudio}>
+            {isPlaying ? "Pause" : "Play"}
           </button>
         )}
         {label1 && (

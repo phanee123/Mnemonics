@@ -67,9 +67,9 @@ const ExitWithDownloadExcel = () => {
       <p>
         A set of 20 words were presented to you in 3 trails. 10 are non-mnemonic
         and 10 are mnemonic words. Compare your results with the list of
-        non-mnemonic and mnemonic words. Calculate the total no. of non-mnemonic
-        and mnemonic words and enter the results in the following format in your
-        record book.
+        non-mnemonic and mnemonic words. Count the total no. of non-mnemonic and
+        mnemonic words you have correctly answered and enter the results in the
+        format in your record book adhering the format given in the next page.
       </p>
       <CSVLink {...csvReport}>Download me</CSVLink>
       <button style={styles.button} onClick={() => navigate("/lastactivity")}>
