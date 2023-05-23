@@ -33,7 +33,7 @@ const LastPage = () => {
       <table>
         <thead>
           <tr>
-            <th colSpan={3}>Number of correct words correctly recalled</th>
+            <th colSpan={3}>Number of words correctly recalled</th>
           </tr>
           <tr>
             <th>Mnemonic Words</th>
@@ -54,11 +54,13 @@ const LastPage = () => {
       <div style={lastPageStyles.bottomArea}>
         <h4>Discussion:</h4>
         <p style={lastPageStyles.dotted}>
-          Discuss the phenomena of Mnemonic/Non-Mnemonic words having a bearing
-          on memory.
+          Discuss your results with regard to weather Mnemonic words are
+          recollected more when compared to & Non-Mnemonic words or vice-versa
         </p>
         <h4>Conclusion:</h4>
-        <p style={lastPageStyles.dotted}>Add conclusion later.</p>
+        <p style={lastPageStyles.dotted}>
+          Demonstrated the phenomena on mnemonic through word.
+        </p>
         <h4>Practical Application:</h4>
         <p style={lastPageStyles.dotted}>
           Mention two situations where you use Mnemonics technique in your day

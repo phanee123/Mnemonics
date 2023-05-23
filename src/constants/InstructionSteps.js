@@ -5,10 +5,11 @@ const INSTRUCTION_STEPS_TEST1 = [
   {
     stepIndex: 1,
     content: `<h2>Welcome to the experiment!</h2>
-          <p>
-          Welcome to the experiment!
-          {write some basic intro for page 1 on mnemonics same will be translated and written in telugu}
-          </p>`,
+          <p>There are several strategies to the process of remembering. Psychologist are of the view that person’s ability to Remember and perform memory related task, can be improved by knowledge or the information and training which an individual has about the nature of memory and how it works. Knowledge relates to an awareness of the methods and strategies that can be adopted for effectively remembering newly received information.</p>
+          <p>Mnemonics are methods of organizing material in a way that help us to remember quickly and easily.</p>
+          <p>Mnemonic devices range from tying a knot to handkerchief, to rhymes, tunes, cueing, categorizing, reducing, elaborating, etc. </p>
+          <p>One method that is often employed is where visual imagery is used. The visual imagery mnemonic system, reported to have been used extensively in ancient times by orators who wished to memorize a lengthy speech, which is known as the method of loci.</p>          
+          `,
     buttonLabel2: "Next",
   },
   {
@@ -29,10 +30,30 @@ const INSTRUCTION_STEPS_TEST1 = [
   },
   {
     stepIndex: 3,
-    content: `<h2>Instructions</h2>
-    <p>A set of words will be presented to you on the screen, one after the other. Each word will be 
-    displayed for a brief period of time. Pay attention to them carefully as you will have to recall 
-    them later.</p>
+    content: `<h2>General Instructions</h2>
+    <h4>Note:This experiment has to be written in your record book. Please adhere to the below format.</h4>
+          <p>1.Introduction</p>
+          <p>2.Materials required</p>
+          <p>3.Purpose</p>
+          <p>4.Particulars of the subject/student [Name,Enrollment No,Age,Date]</p>
+          <p>5.Procedure for conduction</p>
+          <p>6.Results</p>
+          <p>7.Discussions</p>
+          <p>8.Conclusion</p>
+          <p>9.Practical application</p>
+    `,
+    buttonLabel1: "Previous",
+    buttonLabel2: "Next",
+  },
+
+  {
+    stepIndex: 4,
+    content: `<h3>Now we will begin the experiment!</h3>
+    <h2><h2>
+    <h2>Instructions</h2>
+    <p>A set of words will be presented to you on the screen, one after the other. 
+      Each word will be displayed for a brief period of time. Please pay attention to them carefully as you will have to recall them later.</p>
+  
     `,
     buttonLabel1: "Previous",
     buttonLabel2: "Next",
@@ -46,7 +67,7 @@ const INSTRUCTION_STEPS_TEST2 = [
   {
     stepIndex: 1,
     content: `<h2>Instructions</h2>
-    <p>Same set of words will be presented on the screen. 
+    <p>Same set of words will be presented on the screen again. 
     Please pay attention to them carefully as you will have to recall them later</p>
     
     `,
@@ -60,7 +81,7 @@ const INSTRUCTION_STEPS_TEST3 = [
     stepIndex: 1,
     content: `
     <h2>Instructions</h2>
-    <p>Same set of words will be presented on the screen. Please pay attention to them carefully 
+    <p>Same set of words will be presented on the screen screen.Please pay attention to them carefully 
     as you will have to recall them later. </p>
     `,
     buttonLabel2: "Next",

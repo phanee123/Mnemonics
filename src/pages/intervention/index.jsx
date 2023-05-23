@@ -26,8 +26,8 @@ const Intervention = () => {
   }, []);
   return (
     <div className={styles.container}>
-      <h2>Find the sum of below numbers</h2>
-      <h2>Please calculate the results as quickly as possible</h2>
+      <h3>Find the answers for the maths problems given below</h3>
+      <h3>Please calculate the results as quickly as possible</h3>
       <div className={styles.questions}>
         {results.map((eachPair, _index) => (
           <h2 className={styles.sum} key={_index}>

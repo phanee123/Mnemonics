@@ -71,9 +71,13 @@ const ExitWithDownloadExcel = () => {
         mnemonic words you have correctly answered and enter the results in the
         format in your record book adhering the format given in the next page.
       </p>
+      <p>
+        Click on the below link <b>Download Me</b> to get your results & the key
+        for mnemonic and non-mnemonic words.
+      </p>
       <CSVLink {...csvReport}>Download me</CSVLink>
       <button style={styles.button} onClick={() => navigate("/lastactivity")}>
-        End
+        Next
       </button>
     </div>
   );

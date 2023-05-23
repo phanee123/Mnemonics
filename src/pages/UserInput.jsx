@@ -29,6 +29,10 @@ const styles = {
     fontSize: "20px",
     fontWeight: 500,
   },
+  text: {
+    textAlign: "center",
+    padding: "8px",
+  },
 };
 
 const UserInput = () => {
@@ -42,15 +46,15 @@ const UserInput = () => {
   };
   return (
     <div style={styles.container}>
-      <h4>
-        Please type the words you have seen earlier in the box given below. Try
-        to recall and type as many words as possible.
+      <h4 style={styles.text}>
+        Please recollect the words which you have seen repeatedly before you
+        have solved the maths problem. type the words as you recollect in the
+        box given below. Try to recall and type as many words as possible.
       </h4>
 
       <label htmlFor="userInput">
-        <h4>
-          *It is important that every word that you enter is separated by a coma{" "}
-          <b>(,)</b>
+        <h4 style={styles.text}>
+          *After every word you have typed please put a coma<b>(,)</b>
         </h4>{" "}
       </label>
 
