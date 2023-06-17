@@ -26,8 +26,10 @@ const Intervention = () => {
   }, []);
   return (
     <div className={styles.container}>
-      <h3>Find the answers for the maths problems given below</h3>
-      <h3>Please calculate the results as quickly as possible</h3>
+      <h4>Find the answers for the maths problems given below</h4>
+      <h4>క్రింద ఇవ్వబడిన గణిత సమస్యలకు సమాధానాలను కనుగొనండి</h4>
+      <h4>Please calculate the results as quickly as possible</h4>
+      <h4>దయచేసి వీలైనంత త్వరగా వీటిని పరికించడానికి ప్రయత్నించండి</h4>
       <div className={styles.questions}>
         {results.map((eachPair, _index) => (
           <h2 className={styles.sum} key={_index}>

@@ -49,11 +49,14 @@ const INSTRUCTION_STEPS_TEST1 = [
   {
     stepIndex: 4,
     content: `<h3>Now we will begin the experiment!</h3>
+    <h4>(ఇప్పుడు ప్రయోగం ప్రారంభమవుతుంది)</h4>
+    
     <h2><h2>
     <h2>Instructions</h2>
     <p>A set of words will be presented to you on the screen, one after the other. 
       Each word will be displayed for a brief period of time. Please pay attention to them carefully as you will have to recall them later.</p>
-  
+    <p>మీకు స్క్రీన్ పైన కొన్ని పదాలు  ఒకదాని తర్వాత ఒకటి ప్రదర్శించబడతాయి. ప్రతి పదం కొంత సమయం వరకు ప్రదర్శించబడుతుంది. దయచేసి వాటిని జాగ్రత్తగా 
+    గమనించండి ఎందుకంటే మీరు వాటిని తర్వాత గుర్తు తెచ్చుకోవాల్సి ఉంటుంది.</p>
     `,
     buttonLabel1: "Previous",
     buttonLabel2: "Next",
@@ -69,6 +72,7 @@ const INSTRUCTION_STEPS_TEST2 = [
     content: `<h2>Instructions</h2>
     <p>Same set of words will be presented on the screen again. 
     Please pay attention to them carefully as you will have to recall them later</p>
+    <p>అవే పదాల సెట్ మళ్లీ తెరపై ప్రదర్శించబడుతుంది. దయచేసి వాటిని జాగ్రత్తగా గమనించండి ఎందుకంటే,తర్వాత గుర్తు తెచ్చుకోవాల్సి ఉంటుంది</p>
     
     `,
     voiceInstruction: sound2,
@@ -83,6 +87,7 @@ const INSTRUCTION_STEPS_TEST3 = [
     <h2>Instructions</h2>
     <p>Same set of words will be presented on the screen screen.Please pay attention to them carefully 
     as you will have to recall them later. </p>
+    <p>అవే పదాల సెట్ మళ్లీ తెరపై ప్రదర్శించబడుతుంది. దయచేసి వాటిని జాగ్రత్తగా గమనించండి ఎందుకంటే,తర్వాత గుర్తు తెచ్చుకోవాల్సి ఉంటుంది</p>
     `,
     buttonLabel2: "Next",
     voiceInstruction: sound2,
